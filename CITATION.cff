@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite using this metadata."
+title: "agi-forecast — Lutar-Forecast Gauge: receipt-attested AGI capability gauges"
+abstract: >-
+  Module tracking 12 typed AGI capability gauge variables from authoritative upstream sources (METR,
+  Epoch AI, ARC Prize, Apollo Research, AISI, Anthropic RSP, OpenAI Preparedness, DeepMind FSF,
+  Stanford HAI AI Index). Each gauge value is stored with cryptographic provenance and emits a daily
+  forecast receipt verifiable against the ouroboros replay root. Part of the SZL Holdings governed
+  AI decision infrastructure.
+type: software
+authors:
+  - family-names: Lutar
+    given-names: Stephen
+    name-particle: P.
+    affiliation: SZL Holdings
+    orcid: "https://orcid.org/0009-0001-0110-4173"
+license: Apache-2.0
+url: "https://github.com/szl-holdings/agi-forecast"
+repository-code: "https://github.com/szl-holdings/agi-forecast"
+keywords:
+  - szl-holdings
+  - agi-forecasting
+  - ai-governance
+  - metr
+  - epoch-ai
+  - arc-prize
+  - receipt-cryptography
+  - lutar-forecast-gauge
+date-released: "2026-05-16"

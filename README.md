@@ -16,7 +16,9 @@ AGI forecasting at SZL Holdings converts awareness into **RECEIPTS, GAUGES, DASH
 
 ## The 12 Gauge Variables
 
-| # | canonical-key | Upstream Source | Current Value (May 2026) |
+> **Doctrine V6 honesty note:** the values in the right column are a one-time **snapshot taken 2026-05-16** by reading each upstream source manually. They are **not auto-refreshed** because the gauge implementation in this repo is still pre-implementation (see "Status" above). Treat them as anchor values for the spec, not as the live state of the AGI frontier. The first acceptance criterion for the Lutar-Forecast Gauge is that this README's snapshot column gets **deleted and replaced by a "Last Verified" date column** populated automatically by the daily receipt job.
+
+| # | canonical-key | Upstream Source | Snapshot Value · As of 2026-05-16 |
 |---|---------------|-----------------|--------------------------|
 | 1 | `METR-th50-hours` | [metr.org/time-horizons](https://metr.org/time-horizons/) | ≥16 h (ceiling) |
 | 2 | `METR-doubling-months` | [METR TH1.1 Jan 2026](https://metr.org/blog/2026-1-29-time-horizon-1-1/) | 4.3 months |

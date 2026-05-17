@@ -1,0 +1,31 @@
+{
+  "title": "agi-forecast \u2014 Lutar-Forecast Gauge \u2014 receipt-attested AGI capability gauges (METR, Epoch, ARC, Apollo, AISI, RSP, FSF). Lutar, Stephen P. ORCID 0009-0001-0110-4173",
+  "description": "Lutar-Forecast Gauge \u2014 receipt-attested AGI capability gauges (METR, Epoch, ARC, Apollo, AISI, RSP, FSF). Lutar, Stephen P. ORCID 0009-0001-0110-4173",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Lutar, Stephen P.",
+      "affiliation": "SZL Holdings",
+      "orcid": "0009-0001-0110-4173"
+    }
+  ],
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": [
+    "szl-holdings",
+    "ai-governance",
+    "ouroboros"
+  ],
+  "communities": [
+    {
+      "identifier": "open-science"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.19944926",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ]
+}

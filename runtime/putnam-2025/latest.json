@@ -1,0 +1,23 @@
+{
+  "issuedAt": "2026-05-27T17:18:11.956Z",
+  "score01": 0.08333333333333333,
+  "awarded": 1,
+  "possible": 12,
+  "correct": 1,
+  "partial": 0,
+  "incorrect": 11,
+  "abstained": 0,
+  "receiptChainHead": "eaa20ad402187d92873db71545f893c86106128d825156b403cf8fc737a29f45",
+  "receiptChainRoot": "45e9978260dbbf2778b7cfbdb971d93f52bb9ad93b996e1daf0b29d83a553a46",
+  "sourceDir": "runtime/putnam-2025/2026-05-27",
+  "modelRoster": [
+    "claude-sonnet-4-6",
+    "claude-opus-4-7"
+  ],
+  "primitiveRoster": [
+    "@szl-holdings/sparse-attention-kit@0.1.0",
+    "@szl-holdings/sequence-pipeline@0.1.0",
+    "@szl-holdings/perception-loop@0.1.0",
+    "@szl-holdings/putnam-harness@0.1.0"
+  ]
+}

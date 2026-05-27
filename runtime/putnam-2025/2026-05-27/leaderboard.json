@@ -1,0 +1,296 @@
+{
+  "issuedAt": "2026-05-27T17:18:11.959Z",
+  "gauge": {
+    "receiptClass": "putnam.gauge.v1",
+    "freshnessNonce": "90bb1ed10bf7fb19",
+    "issuedAt": "2026-05-27T17:18:11.956Z",
+    "tenant": "szl-holdings:putnam-2025",
+    "parentRef": null,
+    "competitionId": "putnam-2025",
+    "attemptRefs": [
+      "putnam.attempt.v1:08a167efe7858674",
+      "putnam.attempt.v1:4a051e5e3e23060d",
+      "putnam.attempt.v1:87eb219ae49ca607",
+      "putnam.attempt.v1:6e7dc276feb5f917",
+      "putnam.attempt.v1:c34d0bba0c948ed2",
+      "putnam.attempt.v1:ea011355575eb883",
+      "putnam.attempt.v1:b296ab3ad970b10e",
+      "putnam.attempt.v1:c870f7f3c6e0a50f",
+      "putnam.attempt.v1:a77c7d911e3b58b1",
+      "putnam.attempt.v1:89516ac4a48f68ad",
+      "putnam.attempt.v1:e56b0425b5cac107",
+      "putnam.attempt.v1:988fbd792dae7e27"
+    ],
+    "problemsAttempted": 12,
+    "problemsCorrect": 1,
+    "problemsPartial": 0,
+    "problemsIncorrect": 11,
+    "problemsAbstained": 0,
+    "totalAwarded": 1,
+    "totalPossible": 12,
+    "score01": 0.08333333333333333,
+    "wallSeconds": 355.315,
+    "modelRoster": [
+      "claude-sonnet-4-6",
+      "claude-opus-4-7"
+    ],
+    "primitiveRoster": [
+      "@szl-holdings/sparse-attention-kit@0.1.0",
+      "@szl-holdings/sequence-pipeline@0.1.0",
+      "@szl-holdings/perception-loop@0.1.0",
+      "@szl-holdings/putnam-harness@0.1.0"
+    ],
+    "receiptChainHead": "eaa20ad402187d92873db71545f893c86106128d825156b403cf8fc737a29f45"
+  },
+  "perProblem": [
+    {
+      "problemIdx": 1,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "c3539da1ce7410fe59165f3c3b0e893c55c7d2e1bc2c5d6bbbb74e46e68ad143",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The proof is incomplete and contains a critical error. The main argument claims that |δ_k| strictly decreases whenever d_{k-1} ≥ 3, concluding finitely many such k. However, this only shows d_{k-1} ≥ 3 happens finitely often; it does not ru"
+        }
+      ]
+    },
+    {
+      "problemIdx": 2,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "402b8190d6a02f83a8015f302d4721ac58bb9adfcc7957349e2088af741210d2",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The candidate's proof is incomplete and confused. They correctly identify that f(x) = sin(x)/(x(π-x)) has maximum 4/π² at x=π/2 and approaches 1/π at the endpoints, but the solution is cut off mid-sentence and never clearly states the final"
+        }
+      ]
+    },
+    {
+      "problemIdx": 3,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "e3470e243c7c797fcfa42d1c70012be390ad0d14a49585bbc4c55156ca7a15d0",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The candidate's answer is incorrect. The correct answer to Putnam 2025 B3 (this problem) is that Bob wins for n=1 and for even n, while Alice wins for odd n≥3 (or some similar split based on parity). More importantly, the proof is incomplet"
+        }
+      ]
+    },
+    {
+      "problemIdx": 4,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "fe690df8af6456c96750c3d711fda91a156ba2ca6b9a467250501fdf4fd9fafc",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The candidate claims the answer is k=2, but the proof is incomplete and incorrect. The construction is never actually completed — the response cuts off mid-sentence while still trying to find a valid construction. Moreover, the claim k=2 is"
+        }
+      ]
+    },
+    {
+      "problemIdx": 5,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "50f2166510f6cfb97d730b196d6efa1f8ae67e050f26db50b8c5c9ae6b84b3c9",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The answer (alternating sequences) is correct, but the proof is essentially hand-waving. The candidate invokes 'theory of P-partitions' and claims that refining a composition (splitting a run) increases beta, but never actually proves this "
+        }
+      ]
+    },
+    {
+      "problemIdx": 6,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "29d84d175a5287eed75144c19c84f66dc7df4ac0649ff65ddb97db5d057fd5ba",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The candidate proof never completes. It makes several false starts, abandons each approach, and contains errors (e.g., incorrectly claiming c_{2^{k+1}} = c_{2^k}^2 + 2, then retracting; incorrect parity claim for b_n at the end). No actual "
+        }
+      ]
+    },
+    {
+      "problemIdx": 7,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "cd16d00c282f41b520368fb27cdc954dbc73d6f707596eae89ec8e37010936c7",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The proof is incomplete — it literally cuts off mid-sentence in Step 3 ('since ...') before establishing the midpoint lemma, let alone completing the main argument. Moreover, the approach has significant gaps: Lemma 1 assumes the existence "
+        }
+      ]
+    },
+    {
+      "problemIdx": 8,
+      "verdict": "correct",
+      "awarded": 1,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "a2d3539798c84e28245147b050e63a86175f5365233e4f76abc5ee79f43ff7ed",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 1,
+          "maxPoints": 1,
+          "justification": "The proof correctly sets up the centroid formulas, reduces the inequality x_1 < x_2 to showing (∫xf)(∫f²) - (∫xf²)(∫f) < 0, and uses the standard symmetrization trick to rewrite this as -1/2 ∫∫ f(x)f(y)(x-y)(f(x)-f(y)) dx dy. The sign analy"
+        }
+      ]
+    },
+    {
+      "problemIdx": 9,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "044fade3781a5e1c97c878def65f37437ad4811d5b00f976e562f2ff6426693a",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The proof is incomplete and trails off mid-sentence ('If $d'). The candidate never completes the inductive step to show every positive integer is in S. Additionally, the answer to this Putnam problem is actually 'No' (S need not contain all"
+        }
+      ]
+    },
+    {
+      "problemIdx": 10,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "b9b1105578a161af88fbe29f66fa4679ab814c9ae76b688343085bc749b13ab6",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The proof is incomplete and incorrect. It literally cuts off mid-sentence ('has size \\'). The candidate never completes the bound on |L_t|, never derives the key inequality, and never finishes the argument. Moreover, the bound a_{i,j} ≤ k ="
+        }
+      ]
+    },
+    {
+      "problemIdx": 11,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "65cc958ea79c45c3d81ad0d3ce5c73f47b1450deffb3d42e9c29349dd8474ac3",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The candidate proof is incomplete and gets cut off mid-computation. It sets up notation and attempts several approaches (telescoping, Cauchy-Schwarz, bounding S^-), but explicitly acknowledges each attempt is 'not strong enough' or 'too wea"
+        }
+      ]
+    },
+    {
+      "problemIdx": 12,
+      "verdict": "incorrect",
+      "awarded": 0,
+      "possible": 1,
+      "pickedStrategy": "direct",
+      "contradictionAgreement": null,
+      "leanElaborated": false,
+      "leanToolchainAvailable": false,
+      "receiptChainHead": "8f9899f35c91f981cf3c3d88167334c707475eb113f077ec46ffd43009bc04c3",
+      "rubric": [
+        {
+          "partId": 1,
+          "title": "Correctness",
+          "awarded": 0,
+          "maxPoints": 1,
+          "justification": "The candidate's answer of r = 1/4 is incorrect; the correct answer to this Putnam problem is r = 1/2 (or whatever the established answer is, but certainly not 1/4 based on the flawed power-law analysis). Moreover, the proof is incomplete - "
+        }
+      ]
+    }
+  ],
+  "honesty": {
+    "doctrineV6": true,
+    "rule1": "judge marks 'abstained' on parse-failure rather than fabricating a score",
+    "rule2": "lean-check reports toolchain-unavailable when lean not on PATH",
+    "rule3": "every candidate carries tokens-in, tokens-out, wall-ms, model version",
+    "rule4": "picked-candidate heuristic penalises self-declared bluffs ('I cannot prove…')",
+    "rule5": "quick-mode (K=1) does NOT exercise contradiction-probe — agreement reported as null",
+    "rule6": "putnam-2025 is proof-style — no closed-form numeric answer is verifiable in pure Lean 4"
+  }
+}

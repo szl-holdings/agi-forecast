@@ -1,20 +1,20 @@
 # Putnam-2025 — Honest Receipt-Attested Run
 
-- **Issued**: 2026-05-27T17:18:11.956Z
+- **Issued**: 2026-05-27T17:32:15.489Z
 - **Receipt class**: `putnam.gauge.v1`
-- **Receipt-chain root**: `45e9978260dbbf2778b7cfbdb971d93f52bb9ad93b996e1daf0b29d83a553a46`
-- **Chain head**: `eaa20ad402187d92873db71545f893c86106128d825156b403cf8fc737a29f45`
+- **Receipt-chain root**: `c3cc3a2d05ce2a662002d9700dc32a918ab20b8655a685a303613d05b8d4e595`
+- **Chain head**: `687a1a1441e75a6258b9ecb3c601e7e74ae6a222e34c0103ef051eaff673a828`
 - **Tenant**: `szl-holdings:putnam-2025`
 
 ## Result
 
 - score01 = **0.083** (1/12 pts)
-- correct = **1** · partial = 0 · incorrect = 11 · abstained = 0
-- wall = 355.3s (sum of candidate generation only)
+- correct = **1** · partial = 0 · incorrect = 10 · abstained = 1
+- wall = 334.6s (sum of candidate generation only)
 
 ## Models
-- `claude-sonnet-4-6`
 - `claude-opus-4-7`
+- `claude-sonnet-4-6`
 
 ## SZL primitives exercised
 - `@szl-holdings/sparse-attention-kit@0.1.0`
@@ -24,14 +24,16 @@
 
 ## Honesty notes
 - judge marks 'abstained' on parse-failure rather than fabricating a score
-- lean-check reports toolchain-unavailable when lean not on PATH
+- lean-check reports toolchain-unavailable when lean not on PATH (persisted in receipt)
 - every candidate carries tokens-in, tokens-out, wall-ms, model version
 - picked-candidate heuristic penalises self-declared bluffs ('I cannot prove…')
-- quick-mode (K=1) does NOT exercise contradiction-probe — agreement reported as null
+- quick-mode (K=1) reports contradictionAgreement:null — probe cannot run without ≥2 candidates
 - putnam-2025 is proof-style — no closed-form numeric answer is verifiable in pure Lean 4
+- aggregator refuses partial / mixed-K runs — canonical gauge requires exactly 12 coherent attempts
+- receipt refs are content-addressed (sha256 of canonical body) — mutating any field invalidates downstream chain heads
 
 ## Per-problem
-- P01 — incorrect 0/1 (strategy: direct)
+- P01 — abstained 0/1 (strategy: direct)
 - P02 — incorrect 0/1 (strategy: direct)
 - P03 — incorrect 0/1 (strategy: direct)
 - P04 — incorrect 0/1 (strategy: direct)

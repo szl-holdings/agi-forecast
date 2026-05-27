@@ -1,0 +1,42 @@
+{
+  "receiptClass": "putnam.gauge.v1",
+  "freshnessNonce": "90bb1ed10bf7fb19",
+  "issuedAt": "2026-05-27T17:18:11.956Z",
+  "tenant": "szl-holdings:putnam-2025",
+  "parentRef": null,
+  "competitionId": "putnam-2025",
+  "attemptRefs": [
+    "putnam.attempt.v1:08a167efe7858674",
+    "putnam.attempt.v1:4a051e5e3e23060d",
+    "putnam.attempt.v1:87eb219ae49ca607",
+    "putnam.attempt.v1:6e7dc276feb5f917",
+    "putnam.attempt.v1:c34d0bba0c948ed2",
+    "putnam.attempt.v1:ea011355575eb883",
+    "putnam.attempt.v1:b296ab3ad970b10e",
+    "putnam.attempt.v1:c870f7f3c6e0a50f",
+    "putnam.attempt.v1:a77c7d911e3b58b1",
+    "putnam.attempt.v1:89516ac4a48f68ad",
+    "putnam.attempt.v1:e56b0425b5cac107",
+    "putnam.attempt.v1:988fbd792dae7e27"
+  ],
+  "problemsAttempted": 12,
+  "problemsCorrect": 1,
+  "problemsPartial": 0,
+  "problemsIncorrect": 11,
+  "problemsAbstained": 0,
+  "totalAwarded": 1,
+  "totalPossible": 12,
+  "score01": 0.08333333333333333,
+  "wallSeconds": 355.315,
+  "modelRoster": [
+    "claude-sonnet-4-6",
+    "claude-opus-4-7"
+  ],
+  "primitiveRoster": [
+    "@szl-holdings/sparse-attention-kit@0.1.0",
+    "@szl-holdings/sequence-pipeline@0.1.0",
+    "@szl-holdings/perception-loop@0.1.0",
+    "@szl-holdings/putnam-harness@0.1.0"
+  ],
+  "receiptChainHead": "eaa20ad402187d92873db71545f893c86106128d825156b403cf8fc737a29f45"
+}

@@ -1,18 +1,18 @@
 {
-  "issuedAt": "2026-05-27T17:18:11.956Z",
+  "issuedAt": "2026-05-27T17:32:15.489Z",
   "score01": 0.08333333333333333,
   "awarded": 1,
   "possible": 12,
   "correct": 1,
   "partial": 0,
-  "incorrect": 11,
-  "abstained": 0,
-  "receiptChainHead": "eaa20ad402187d92873db71545f893c86106128d825156b403cf8fc737a29f45",
-  "receiptChainRoot": "45e9978260dbbf2778b7cfbdb971d93f52bb9ad93b996e1daf0b29d83a553a46",
+  "incorrect": 10,
+  "abstained": 1,
+  "receiptChainHead": "687a1a1441e75a6258b9ecb3c601e7e74ae6a222e34c0103ef051eaff673a828",
+  "receiptChainRoot": "c3cc3a2d05ce2a662002d9700dc32a918ab20b8655a685a303613d05b8d4e595",
   "sourceDir": "runtime/putnam-2025/2026-05-27",
   "modelRoster": [
-    "claude-sonnet-4-6",
-    "claude-opus-4-7"
+    "claude-opus-4-7",
+    "claude-sonnet-4-6"
   ],
   "primitiveRoster": [
     "@szl-holdings/sparse-attention-kit@0.1.0",

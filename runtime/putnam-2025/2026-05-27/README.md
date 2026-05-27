@@ -1,16 +1,16 @@
 # Putnam-2025 — Honest Receipt-Attested Run
 
-- **Issued**: 2026-05-27T17:32:15.489Z
+- **Issued**: 2026-05-27T20:26:28.930Z
 - **Receipt class**: `putnam.gauge.v1`
-- **Receipt-chain root**: `c3cc3a2d05ce2a662002d9700dc32a918ab20b8655a685a303613d05b8d4e595`
-- **Chain head**: `687a1a1441e75a6258b9ecb3c601e7e74ae6a222e34c0103ef051eaff673a828`
+- **Receipt-chain root**: `1471480339cca2ba5d1c6c4aa6c9584e1769069b746046fe094fa44041a5da01`
+- **Chain head**: `245c296ec5480db089af47689f1cb47a12817101253a7a020379a00617b0ee24`
 - **Tenant**: `szl-holdings:putnam-2025`
 
 ## Result
 
 - score01 = **0.083** (1/12 pts)
-- correct = **1** · partial = 0 · incorrect = 10 · abstained = 1
-- wall = 334.6s (sum of candidate generation only)
+- correct = **1** · partial = 0 · incorrect = 11 · abstained = 0
+- wall = 2493.5s (sum of candidate generation only)
 
 ## Models
 - `claude-opus-4-7`
@@ -33,16 +33,16 @@
 - receipt refs are content-addressed (sha256 of canonical body) — mutating any field invalidates downstream chain heads
 
 ## Per-problem
-- P01 — abstained 0/1 (strategy: direct)
-- P02 — incorrect 0/1 (strategy: direct)
-- P03 — incorrect 0/1 (strategy: direct)
-- P04 — incorrect 0/1 (strategy: direct)
+- P01 — incorrect 0/1 (strategy: contradiction)
+- P02 — incorrect 0/1 (strategy: induction)
+- P03 — incorrect 0/1 (strategy: induction)
+- P04 — incorrect 0/1 (strategy: contradiction)
 - P05 — incorrect 0/1 (strategy: direct)
-- P06 — incorrect 0/1 (strategy: direct)
-- P07 — incorrect 0/1 (strategy: direct)
-- P08 — correct 1/1 (strategy: direct)
-- P09 — incorrect 0/1 (strategy: direct)
-- P10 — incorrect 0/1 (strategy: direct)
+- P06 — incorrect 0/1 (strategy: contradiction)
+- P07 — incorrect 0/1 (strategy: contradiction)
+- P08 — correct 1/1 (strategy: induction)
+- P09 — incorrect 0/1 (strategy: induction)
+- P10 — incorrect 0/1 (strategy: contradiction)
 - P11 — incorrect 0/1 (strategy: direct)
 - P12 — incorrect 0/1 (strategy: direct)
 

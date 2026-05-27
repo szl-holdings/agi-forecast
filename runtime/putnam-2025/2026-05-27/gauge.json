@@ -1,33 +1,33 @@
 {
   "receiptClass": "putnam.gauge.v1",
-  "freshnessNonce": "4d053d4100975168",
-  "issuedAt": "2026-05-27T17:32:15.489Z",
+  "freshnessNonce": "9a9d590eaaeaa95f",
+  "issuedAt": "2026-05-27T20:26:28.930Z",
   "tenant": "szl-holdings:putnam-2025",
   "parentRef": null,
   "competitionId": "putnam-2025",
   "attemptRefs": [
-    "putnam.attempt.v1:21dc88a9b878f160",
-    "putnam.attempt.v1:46eaa0b629b8b976",
-    "putnam.attempt.v1:265b194f202a8db7",
-    "putnam.attempt.v1:6f28f57d9fc97710",
-    "putnam.attempt.v1:6837d8c0c791ec01",
-    "putnam.attempt.v1:b48437707a2d98fa",
-    "putnam.attempt.v1:c21c040c2f491377",
-    "putnam.attempt.v1:e2ca60de4b3da355",
-    "putnam.attempt.v1:7c9eb6714703b304",
-    "putnam.attempt.v1:ec8ecb13366e68ba",
-    "putnam.attempt.v1:0718462b3d44ed38",
-    "putnam.attempt.v1:a9259997ba8d5a92"
+    "putnam.attempt.v1:2d85152505aca437",
+    "putnam.attempt.v1:86de2da923b024a0",
+    "putnam.attempt.v1:f9c5e5e96405d128",
+    "putnam.attempt.v1:8d89acedf45738d2",
+    "putnam.attempt.v1:d13442f827340dd3",
+    "putnam.attempt.v1:fa9954e08aa8f95a",
+    "putnam.attempt.v1:6a3e7f0a8d4bd8f4",
+    "putnam.attempt.v1:01e932a79577cb2b",
+    "putnam.attempt.v1:ffb1eecdfc7d1262",
+    "putnam.attempt.v1:b01804c55c9a2914",
+    "putnam.attempt.v1:5ffb4b3420c0d5fa",
+    "putnam.attempt.v1:d1c527218a480566"
   ],
   "problemsAttempted": 12,
   "problemsCorrect": 1,
   "problemsPartial": 0,
-  "problemsIncorrect": 10,
-  "problemsAbstained": 1,
+  "problemsIncorrect": 11,
+  "problemsAbstained": 0,
   "totalAwarded": 1,
   "totalPossible": 12,
   "score01": 0.08333333333333333,
-  "wallSeconds": 334.552,
+  "wallSeconds": 2493.485,
   "modelRoster": [
     "claude-opus-4-7",
     "claude-sonnet-4-6"
@@ -38,5 +38,5 @@
     "@szl-holdings/perception-loop@0.1.0",
     "@szl-holdings/putnam-harness@0.1.0"
   ],
-  "receiptChainHead": "687a1a1441e75a6258b9ecb3c601e7e74ae6a222e34c0103ef051eaff673a828"
+  "receiptChainHead": "245c296ec5480db089af47689f1cb47a12817101253a7a020379a00617b0ee24"
 }

@@ -1,5 +1,10 @@
 # agi-forecast — Lutar-Forecast Gauge
 
+[![Concept DOI](https://img.shields.io/badge/concept%20DOI-10.5281%2Fzenodo.19944926-01696F?style=flat-square&logo=doi&logoColor=white)](https://doi.org/10.5281/zenodo.19944926)
+[![License](https://img.shields.io/badge/license-Apache%202.0-2DA44E?style=flat-square)](./LICENSE)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0001--0110--4173-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0001-0110-4173)
+[![Doctrine v6](https://img.shields.io/badge/Doctrine-v6%20clean-01696F?style=flat-square)](https://github.com/szl-holdings/platform/blob/main/tools/doctrine-v6-scan.js)
+
 **Receipt-attested AGI capability gauges tracking METR, Epoch, ARC, Apollo, AISI, RSP, and FSF benchmarks.**
 
 **Author:** Lutar, Stephen P. · ORCID [0009-0001-0110-4173](https://orcid.org/0009-0001-0110-4173) · SZL Holdings
@@ -8,15 +13,19 @@
 
 ---
 
-## Executive Summary
+## What this is
 
-AGI forecasting at SZL Holdings converts awareness into **RECEIPTS, GAUGES, DASHBOARDS, and PREDICTIONS-VS-ACTUALS**. The `Lutar-Forecast Gauge` is a module shipping in both `ouroboros` (TypeScript) and `a11oy` that ingests 12 typed variables from the field's authoritative upstream sources, stores each with cryptographic provenance, and emits a daily `forecast.summary@YYYY-MM-DD` receipt verifiable against the ouroboros replay root. A static Vercel dashboard makes every number public. Three derived metrics — `horizon-velocity`, `alignment-debt`, and `lutar-readiness` — translate raw data into actionable signals for the a11oy runtime. A Brier-score ledger closes the prediction-vs-actuals loop.
+The `Lutar-Forecast Gauge` is a module shipping in both `ouroboros` (TypeScript) and `a11oy` that ingests 12 typed variables from the field's authoritative upstream sources, stores each with cryptographic provenance, and emits a daily `forecast.summary@YYYY-MM-DD` receipt verifiable against the ouroboros replay root.
+
+A static Vercel dashboard makes every number public. Three derived metrics — `horizon-velocity`, `alignment-debt`, and `lutar-readiness` — translate raw data into signals for the a11oy runtime. A Brier-score ledger closes the prediction-vs-actuals loop.
+
+This repository positions the Lutar-Forecast Gauge as the canonical AGI readiness instrument within the SZL Holdings governed-decision substrate. Every gauge variable is citation-backed. Every receipt is verifiable. Doctrine V6 applies: no marketing-superlative language; every claim is tied to a citable source.
 
 ---
 
 ## The 12 Gauge Variables
 
-> **Doctrine V6 honesty note:** the values in the right column are a one-time **snapshot taken 2026-05-16** by reading each upstream source manually. They are **not auto-refreshed** because the gauge implementation in this repo is still pre-implementation (see "Status" above). Treat them as anchor values for the spec, not as the live state of the AGI frontier. The first acceptance criterion for the Lutar-Forecast Gauge is that this README's snapshot column gets **deleted and replaced by a "Last Verified" date column** populated automatically by the daily receipt job.
+> **Doctrine V6 note:** the values in the right column are a one-time **snapshot taken 2026-05-16** by reading each upstream source. They are **not auto-refreshed** because the gauge implementation in this repo is pre-implementation (see "Status" above). Treat them as anchor values for the spec. The first acceptance criterion for the Lutar-Forecast Gauge is that this snapshot column gets **deleted and replaced by a "Last Verified" date column** populated automatically by the daily receipt job.
 
 | # | canonical-key | Upstream Source | Snapshot Value · As of 2026-05-16 |
 |---|---------------|-----------------|--------------------------|
@@ -40,6 +49,18 @@ AGI forecasting at SZL Holdings converts awareness into **RECEIPTS, GAUGES, DASH
 Full operational spec: [`evolution_pod/meditation_v5/phd_agi_forecast/operational_spec.md`](https://github.com/szl-holdings/ouroboros/blob/main/docs/meditation_v5_agi_forecast_spec.md)
 
 **Source:** Meditation V5 PhD-AGI-Forecast subagent · 2026-05-16
+
+---
+
+## Thesis publications (DOI-pinned)
+
+| Version | DOI | PDF |
+|---|---|---|
+| **v16** | [`10.5281/zenodo.20424996`](https://doi.org/10.5281/zenodo.20424996) | [PDF](https://zenodo.org/records/20424996/files/ouroboros-thesis-v16.pdf) |
+| **v15** | [`10.5281/zenodo.20424995`](https://doi.org/10.5281/zenodo.20424995) | [PDF](https://zenodo.org/records/20424995/files/ouroboros-thesis-v15.pdf) |
+| **v14** | [`10.5281/zenodo.20424992`](https://doi.org/10.5281/zenodo.20424992) | [PDF](https://zenodo.org/records/20424992/files/ouroboros-thesis-v14.pdf) |
+
+**Concept DOI:** [`10.5281/zenodo.19944926`](https://doi.org/10.5281/zenodo.19944926)
 
 ---
 

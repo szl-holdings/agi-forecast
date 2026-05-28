@@ -23,6 +23,9 @@ We take security seriously. If you discover a vulnerability in agi-forecast, ple
 
 **Response SLA:** We acknowledge all vulnerability reports within **72 hours**.
 
+
+**Response SLA:** Acknowledged within **48 hours** of receipt. Status update at 7 calendar days; remediation timeline communicated within 14 calendar days for confirmed vulnerabilities.
+
 Please include in your report:
 
 - A clear description of the issue and its potential impact.

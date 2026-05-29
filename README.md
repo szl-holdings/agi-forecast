@@ -26,7 +26,7 @@ This repository's live demos, dataset mirror, and org showcase live on the [SZLH
 | **Live demo** | [agi-forecast-viewer](https://huggingface.co/spaces/SZLHOLDINGS/agi-forecast-viewer) · [agi-forecast-platform](https://huggingface.co/spaces/SZLHOLDINGS/agi-forecast-platform) |
 | **Deep-dive showcase** | [agi-forecast-deep-dive](https://huggingface.co/spaces/SZLHOLDINGS/agi-forecast-deep-dive) |
 | **Source mirror** | [agi-forecast-source](https://huggingface.co/datasets/SZLHOLDINGS/agi-forecast-source) |
-| **Org showcase** | [SZLHOLDINGS on Hugging Face](https://huggingface.co/SZLHOLDINGS) — 22 datasets · 19+ Spaces · 2 models |
+| **Org showcase** | [SZLHOLDINGS on Hugging Face](https://huggingface.co/SZLHOLDINGS) — 24 datasets · 19+ Spaces · 2 models |
 
 ## What is real today
 

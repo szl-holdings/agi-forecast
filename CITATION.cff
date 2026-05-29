@@ -1,7 +1,30 @@
-
+cff-version: 1.2.0
+message: "If you use this software, please cite as follows."
+title: "agi-forecast — Forecasting models and scenario library for AI governance trajectories"
+version: "0.1.0"
+date-released: "2026-05-29"
+abstract: >-
+  Forecasting models and scenario library for AI governance trajectories,
+  built on the SZL Holdings Ouroboros Thesis governance framework and
+  Lutar Invariant Λ-axis scoring.
+type: software
+authors:
+  - family-names: Lutar
+    given-names: "Stephen P."
+    name-suffix: "Jr."
+    affiliation: SZL Holdings
+    orcid: "https://orcid.org/0009-0001-0110-4173"
 license: Apache-2.0
+url: "https://github.com/szl-holdings/agi-forecast"
+repository-code: "https://github.com/szl-holdings/agi-forecast"
+keywords:
+  - szl-holdings
+  - ai-governance
+  - forecasting
+  - scenarios
+  - lutar-invariant
 identifiers:
-  - description: "Ouroboros Thesis v18.0 — Multi-track Substrate Expansion (Zenodo)"
+  - description: "Ouroboros Thesis v18.0 — research foundation (Zenodo)"
     type: doi
     value: "10.5281/zenodo.20434276"
   - description: "Ouroboros Thesis concept DOI — always-latest"

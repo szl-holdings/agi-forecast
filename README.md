@@ -22,7 +22,7 @@ All counts are grep-verifiable from this repository.
 
 | Metric | Value | How to verify |
 |--------|-------|---------------|
-| FG gauges | 12 | `grep -c "export const FG" runtime/src/gauges.ts` |
+| FG gauges | 12 | `grep -c "^export const FG[0-9][0-9]*:" runtime/src/gauges.ts` |
 | Scenario gates | 4 | FG-S1, FG-S2, FG-S3, FG-S4 in `runtime/src/derived.ts` |
 | Putnam 2026-05-27 problems attempted | 12 | `runtime/putnam-2025/2026-05-27/gauge.json` → `problemsAttempted` |
 | Putnam 2026-05-27 problems correct | 1 | `runtime/putnam-2025/2026-05-27/gauge.json` → `problemsCorrect` |

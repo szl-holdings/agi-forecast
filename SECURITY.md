@@ -15,7 +15,7 @@ Security updates are issued for the latest minor release on the default branch. 
 
 We take security seriously. If you discover a vulnerability in agi-forecast, please report it privately so we can investigate and remediate before public disclosure.
 
-**Preferred channel:** [stephen@szlholdings.com](mailto:stephen@szlholdings.com)
+**Preferred channel:** [security@szlholdings.com](mailto:security@szlholdings.com)
 
 **Alternate channel:** [Open a private security advisory](https://github.com/szl-holdings/agi-forecast/security/advisories/new) on GitHub.
 

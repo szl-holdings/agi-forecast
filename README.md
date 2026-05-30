@@ -41,7 +41,7 @@
 
 ## On Hugging Face
 
-[SZLHOLDINGS on Hugging Face](https://huggingface.co/SZLHOLDINGS) — 27 Spaces · 31 datasets · 2 models
+[SZLHOLDINGS on Hugging Face](https://huggingface.co/SZLHOLDINGS) — 26 Spaces · 29 datasets · 2 models
 
 | Surface | Artifact |
 |---------|----------|
@@ -66,7 +66,7 @@ Forecasting operates over `(Ω, ℱ, P)` where ω ∈ Ω is a time-indexed seque
 | Forecast scenario models | `ls src/scenarios/ \| wc -l` | run locally |
 | PAC-Bayes CI tests (main) | baseline | `pnpm test` |
 | Putnam (2026) | 2/12 Lean-discharged · 10/12 structure | `putnam_scores/2026.json` |
-| Lean declarations (org) | 217 | [lutar-lean](https://github.com/szl-holdings/lutar-lean) |
+| Lean declarations (org) | 626 | [lutar-lean](https://github.com/szl-holdings/lutar-lean) |
 | Lean axioms (org) | 12 | [lutar-lean](https://github.com/szl-holdings/lutar-lean) |
 | HF Spaces (org) | 24 | [SZLHOLDINGS HF org](https://huggingface.co/SZLHOLDINGS) |
 

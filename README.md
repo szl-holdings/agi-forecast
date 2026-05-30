@@ -4,6 +4,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20434276.svg)](https://doi.org/10.5281/zenodo.20434276)
 [![CI](https://github.com/szl-holdings/agi-forecast/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/szl-holdings/agi-forecast/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/szl-holdings/agi-forecast/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/szl-holdings/agi-forecast/actions/workflows/codeql.yml)
+[![GHAS Code Security](https://img.shields.io/badge/GHAS-Code_Security-2DA44E.svg?style=flat-square&logo=github)](https://github.com/szl-holdings/agi-forecast/security/code-scanning)
+[![Secret Protection](https://img.shields.io/badge/GHAS-Secret_Protection-2DA44E.svg?style=flat-square&logo=github)](https://github.com/szl-holdings/agi-forecast/security/secret-scanning)
 [![SBOM](https://github.com/szl-holdings/agi-forecast/actions/workflows/sbom.yml/badge.svg?branch=main)](https://github.com/szl-holdings/agi-forecast/actions/workflows/sbom.yml)
 [![SLSA L1 (SBOM + DCO)](https://img.shields.io/badge/SLSA-L1_(SBOM_%2B_DCO)-0B1F3A.svg?style=flat-square)](https://slsa.dev/spec/v1.0/levels)
 [![DCO](https://github.com/szl-holdings/agi-forecast/actions/workflows/dco.yml/badge.svg?branch=main)](https://github.com/szl-holdings/agi-forecast/actions/workflows/dco.yml)

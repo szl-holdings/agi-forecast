@@ -7,14 +7,14 @@
   "competitionId": "putnam-2024",
   "schema_version": "2.1.0",
   "problemsAttempted": 12,
-  "problemsCorrect": 12,
+  "problemsCorrect": 10,
   "problemsPartial": 0,
   "problemsIncorrect": 0,
   "problemsAbstained": 0,
-  "totalAwarded": 12,
+  "totalAwarded": 10,
   "totalPossible": 12,
-  "score01": 1.0,
-  "score_pct": 100.0,
+  "score01": 0.8333333333333334,
+  "score_pct": 83.33,
   "baseline_score01": 0.0833,
   "delta_score01": 0.9167,
   "green_lean_count": 4,
@@ -61,5 +61,5 @@
     "putnam-v2:2024-B5:f3e7f7d450a7bb3f",
     "putnam-v2:2024-B6:5a4075d69d95962b"
   ],
-  "notes": "Honest: 12/12 SOLVED. GREEN (zero sorry): 4. TRACKED (sorry, staged_advisory): 2. NONE (judge-consensus): 5. staged_advisory_count: 8. A4 (p\u22611 mod 4) has judge_consensus=false but 2/3 majority SOLVED; staged_advisory=true. Do not claim 12/12 without Lean GREEN on all."
+  "notes": "Honest score: 10/12 = 83.3%% (Doctrine V6). GREEN (zero sorry, lake-verified): A1, A5, B4, B6 = 4 problems. NONE (proof-type, judge-consensus, no Lean): A3, A6, B2, B3, B5 + A4(partial) = 6 problems. TRACKED (sorry present, staged_advisory=true): A2, B1 = 2 problems. staged_advisory_count=8. Do not claim 12/12: 2 TRACKED proofs have unresolved sorry tactics. Lean commit: c4d13795689601324fce0236351bfe0ade990a43. Receipt chain head: 90420681f588d0082cce206c108da4b1c1e10752273ff0f7320f50bb6f8b238d."
 }

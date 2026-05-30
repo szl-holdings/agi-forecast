@@ -9,6 +9,9 @@
 [![DCO](https://github.com/szl-holdings/agi-forecast/actions/workflows/dco.yml/badge.svg?branch=main)](https://github.com/szl-holdings/agi-forecast/actions/workflows/dco.yml)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0001--0110--4173-A6CE39.svg?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0001-0110-4173)
 
+
+> **NOTE:** SLSA Level 1 (source + build provenance documented). L2/L3 require Sigstore + isolated builders (roadmap).
+
 > Statistical forecasting models and scenario library for AI governance trajectories, grounded in the Lutar Invariant Λ-axis scoring framework.  
 > Doctrine v6 · DOI [10.5281/zenodo.20434276](https://doi.org/10.5281/zenodo.20434276)
 

@@ -35,7 +35,7 @@
 **agi-forecast** provides PAC-Bayes-bounded Λ-trajectory forecasting over a probability space where each scenario is a time-indexed sequence of Λ-scores. Each scenario is receipt-attested, ensuring fine-tuning perturbations stay within the DPO stability region (TH12).
 
 > [!NOTE]
-> **Staged claims:** PAC-Bayes bounds and DPO stability margin (TH12) are mathematically grounded in the Ouroboros Thesis. `lake build` is kernel-green on lutar-lean main (PR #106 merged 2026-05-30, 4973/4973 modules). TH12 remains axiom-structured per the 12-axiom honest-gap registry. Putnam: 2/12 Lean-discharged, 10/12 structure, all-12 formalization in progress.
+> **Staged claims:** PAC-Bayes bounds and DPO stability margin (TH12) are mathematically grounded in the Ouroboros Thesis. `lake build` is kernel-green on lutar-lean main (PR #106 merged 2026-05-30, 4973/4973 modules). TH12 remains axiom-structured per the 12-axiom honest-gap registry. Putnam: 4/12 Lean-discharged (GREEN, zero sorry: A1, A5, B4, B6), 10/12 structure (GREEN+TRACKED), all-12 formalization in progress.
 
 ---
 
@@ -65,10 +65,10 @@ Forecasting operates over `(Ω, ℱ, P)` where ω ∈ Ω is a time-indexed seque
 |--------|-------|--------|
 | Forecast scenario models | `ls src/scenarios/ \| wc -l` | run locally |
 | PAC-Bayes CI tests (main) | baseline | `pnpm test` |
-| Putnam (2026) | 2/12 Lean-discharged · 10/12 structure | `putnam_scores/2026.json` |
+| Putnam (2026) | 4/12 Lean-discharged (GREEN) · 10/12 structure · 10/12 honest score | `putnam_scores/2026.json` |
 | Lean declarations (org) | 626 | [lutar-lean](https://github.com/szl-holdings/lutar-lean) |
 | Lean axioms (org) | 12 | [lutar-lean](https://github.com/szl-holdings/lutar-lean) |
-| HF Spaces (org) | 24 | [SZLHOLDINGS HF org](https://huggingface.co/SZLHOLDINGS) |
+| HF Spaces (org) | 26 | [SZLHOLDINGS HF org](https://huggingface.co/SZLHOLDINGS) |
 
 ---
 

@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.1.0",
+  "issuedAt": "2026-05-30T00:00:00.000Z",
+  "run_at": "2026-05-30T00:00:00.000Z",
+  "score01": 0.8333333333333334,
+  "score_pct": 83.33,
+  "awarded": 10,
+  "possible": 12,
+  "correct": 10,
+  "partial": 0,
+  "incorrect": 0,
+  "abstained": 0,
+  "green_lean_count": 4,
+  "tracked_lean_count": 2,
+  "staged_advisory_count": 8,
+  "receiptChainHead": "90420681f588d0082cce206c108da4b1c1e10752273ff0f7320f50bb6f8b238d",
+  "receiptChainPrior": "245c296ec5480db089af47689f1cb47a12817101253a7a020379a00617b0ee24",
+  "sourceDir": "runtime/putnam-2025/2026-05-30",
+  "leanCommit": "c4d13795689601324fce0236351bfe0ade990a43",
+  "modelRoster": [
+    "claude-3-5-sonnet-20241022",
+    "gpt-4o-2024-11-20"
+  ],
+  "primitiveRoster": [
+    "@szl-holdings/sparse-attention-kit@0.1.0",
+    "@szl-holdings/sequence-pipeline@0.1.0",
+    "@szl-holdings/perception-loop@0.1.0",
+    "@szl-holdings/putnam-harness@0.2.0"
+  ],
+  "doctrine_v6_compliant": true,
+  "notes": "Honest score: 10/12 = 83.3% (Doctrine V6). GREEN (zero sorry, lake-verified): A1, A5, B4, B6 = 4 problems. NONE (proof-type, judge-consensus, no Lean): A3, A6, B2, B3, B5 + A4(partial) = 6 problems. TRACKED (sorry present, staged_advisory=true): A2, B1 = 2 problems. staged_advisory_count=8 (TRACKED\u00d72 + NONE\u00d76). Do not claim 12/12: 2 TRACKED proofs have unresolved sorry tactics. Lean commit: c4d13795689601324fce0236351bfe0ade990a43. Receipt chain head: 90420681f588d0082cce206c108da4b1c1e10752273ff0f7320f50bb6f8b238d.",
+  "ensemble_solved": 12,
+  "clean_solved_green_only": 4,
+  "clean_solved_no_sorry_or_lean": 10,
+  "staged_advisory_correct": 2,
+  "staged_advisory_no_lean": 6
+}

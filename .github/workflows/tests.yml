@@ -61,7 +61,7 @@ jobs:
       - name: Upload coverage to Codecov
         # Only uploads if CODECOV_TOKEN is set as a repository secret.
         # Safe to leave unconfigured — step silently passes if token absent.
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@75cd11691c0faa626561e295848008c8a7dddffe # v5
         if: ${{ env.CODECOV_TOKEN != '' }}
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

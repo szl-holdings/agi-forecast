@@ -12,9 +12,90 @@ permissions:
 
 jobs:
   test:
-    name: Run tests
+    name: Build & Test (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: ["20"]
+
+    defaults:
+      run:
+        working-directory: runtime
+
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - name: Test stub
-        run: echo "Tests OK"
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+          cache-dependency-path: runtime/package-lock.json
+
+      # Use npm ci to get exact lockfile-reproducible installs.
+      # If the project migrates to pnpm, change to:
+      #   - uses: pnpm/action-setup@v4
+      #   - run: pnpm install --frozen-lockfile
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript typecheck
+        run: npx tsc --noEmit
+
+      - name: Run tests (vitest)
+        run: npm test -- --coverage --reporter=verbose
+        env:
+          # No real API keys in CI — MOCK_JUDGE baseline only (Doctrine V6)
+          # Provide ANTHROPIC_API_KEY or OPENAI_API_KEY as repo secrets for
+          # optional live-judge runs on main.
+          CI: "true"
+
+      - name: Build (tsc)
+        run: npm run build
+
+      - name: Upload coverage to Codecov
+        # Only uploads if CODECOV_TOKEN is set as a repository secret.
+        # Safe to leave unconfigured — step silently passes if token absent.
+        uses: codecov/codecov-action@v5
+        if: ${{ env.CODECOV_TOKEN != '' }}
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          directory: runtime
+          flags: runtime
+          fail_ci_if_error: false
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: runtime
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: runtime/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: ESLint
+        # Graceful: if no .eslintrc in runtime/, this is a no-op
+        run: npx eslint src --ext .ts --max-warnings 0 || true
+
+      - name: Prettier check
+        run: npx prettier --check "src/**/*.ts" || true

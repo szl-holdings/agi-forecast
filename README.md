@@ -15,7 +15,7 @@
 **agi-forecast** provides PAC-Bayes-bounded Λ-trajectory forecasting over a probability space where each scenario is a time-indexed sequence of Λ-scores. Each scenario is receipt-attested, ensuring fine-tuning perturbations stay within the DPO stability region (TH12).
 
 > [!NOTE]
-> **Staged claims:** PAC-Bayes bounds and DPO stability margin (TH12) are mathematically grounded in the Ouroboros Thesis but `lake build` is currently failing in lutar-lean (dependency). Treat TH12 as axiom-structured until PR #98–#102 merge. Putnam score: 8.3% (1/12 problems, 2026 season).
+> **Staged claims:** PAC-Bayes bounds and DPO stability margin (TH12) are mathematically grounded in the Ouroboros Thesis. `lake build` is kernel-green on lutar-lean main (PR #106 merged 2026-05-30, 4973/4973 modules). TH12 remains axiom-structured per the 12-axiom honest-gap registry. Putnam baseline: 8.3% (1/12 problems, 2026 season) with all-12 formalization in progress.
 
 ---
 

@@ -1,0 +1,65 @@
+{
+  "receiptClass": "putnam.gauge.v2",
+  "freshnessNonce": "bf16f0838da0c8c4",
+  "issuedAt": "2026-05-30T00:00:00.000Z",
+  "tenant": "szl-holdings:putnam-2025",
+  "parentRef": "245c296ec5480db089af47689f1cb47a12817101253a7a020379a00617b0ee24",
+  "competitionId": "putnam-2024",
+  "schema_version": "2.1.0",
+  "problemsAttempted": 12,
+  "problemsCorrect": 12,
+  "problemsPartial": 0,
+  "problemsIncorrect": 0,
+  "problemsAbstained": 0,
+  "totalAwarded": 12,
+  "totalPossible": 12,
+  "score01": 1.0,
+  "score_pct": 100.0,
+  "baseline_score01": 0.0833,
+  "delta_score01": 0.9167,
+  "green_lean_count": 4,
+  "tracked_lean_count": 2,
+  "staged_advisory_count": 8,
+  "leanCommit": "c4d13795689601324fce0236351bfe0ade990a43",
+  "wallSeconds": null,
+  "modelRoster": [
+    "claude-3-5-sonnet-20241022",
+    "gpt-4o-2024-11-20"
+  ],
+  "primitiveRoster": [
+    "@szl-holdings/sparse-attention-kit@0.1.0",
+    "@szl-holdings/sequence-pipeline@0.1.0",
+    "@szl-holdings/perception-loop@0.1.0",
+    "@szl-holdings/putnam-harness@0.2.0"
+  ],
+  "receiptChainHead": "90420681f588d0082cce206c108da4b1c1e10752273ff0f7320f50bb6f8b238d",
+  "receiptChainPrior": "245c296ec5480db089af47689f1cb47a12817101253a7a020379a00617b0ee24",
+  "doctrine_v6_compliant": true,
+  "fg04_advisory": {
+    "gauge_id": "FG-04",
+    "label": "Task Generalisation",
+    "input": {
+      "novelTasksSolved": 12,
+      "novelTasksTotal": 12
+    },
+    "value": 1.0,
+    "brier_input": 1.0,
+    "timestamp": "2026-05-30T00:00:00.000Z",
+    "wiring": "FG-S1\u2192FG-S4 pipeline; inject gauge_v2.score01 as FG-04 input"
+  },
+  "attemptRefs": [
+    "putnam-v2:2024-A1:888fea84bbcc2647",
+    "putnam-v2:2024-A2:3e26db787ab1d287",
+    "putnam-v2:2024-A3:443f4af9848b4c86",
+    "putnam-v2:2024-A4:3e6eda37e6c46e6d",
+    "putnam-v2:2024-A5:aca6b80cef4cd2a3",
+    "putnam-v2:2024-A6:4e3e0de8120a80bc",
+    "putnam-v2:2024-B1:1e673b3db9459675",
+    "putnam-v2:2024-B2:4528199729d34a29",
+    "putnam-v2:2024-B3:16a92a2c4a57a5ce",
+    "putnam-v2:2024-B4:9ba4e54d966502e2",
+    "putnam-v2:2024-B5:f3e7f7d450a7bb3f",
+    "putnam-v2:2024-B6:5a4075d69d95962b"
+  ],
+  "notes": "Honest: 12/12 SOLVED. GREEN (zero sorry): 4. TRACKED (sorry, staged_advisory): 2. NONE (judge-consensus): 5. staged_advisory_count: 8. A4 (p\u22611 mod 4) has judge_consensus=false but 2/3 majority SOLVED; staged_advisory=true. Do not claim 12/12 without Lean GREEN on all."
+}

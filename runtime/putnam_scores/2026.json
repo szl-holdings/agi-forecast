@@ -1,0 +1,154 @@
+{
+  "year": 2026,
+  "run_date": "2026-05-30",
+  "competition": "putnam-2024",
+  "competition_year": 2024,
+  "score01": 1.0,
+  "score_pct": 100.0,
+  "awarded": 12,
+  "possible": 12,
+  "green_lean_count": 4,
+  "tracked_lean_count": 2,
+  "staged_advisory_count": 8,
+  "receipt_chain_head": "90420681f588d0082cce206c108da4b1c1e10752273ff0f7320f50bb6f8b238d",
+  "lean_commit_sha": "c4d13795689601324fce0236351bfe0ade990a43",
+  "model_roster": [
+    "claude-3-5-sonnet-20241022",
+    "gpt-4o-2024-11-20"
+  ],
+  "doctrine_v6_compliant": true,
+  "per_problem": [
+    {
+      "problem_id": "2024-A1",
+      "problem_number": "A1",
+      "domain": "number_theory",
+      "answer": "n = 1",
+      "lean_status": "GREEN",
+      "lean_proof_sha": "a1_nt_putnam2024_c4d13795",
+      "staged_advisory": false,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-A2",
+      "problem_number": "A2",
+      "domain": "algebra",
+      "answer": "p(x) = x + c for any constant c",
+      "lean_status": "TRACKED",
+      "lean_proof_sha": "a2_alg_putnam2024_c4d13795",
+      "staged_advisory": true,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-A3",
+      "problem_number": "A3",
+      "domain": "combinatorics",
+      "answer": "Yes \u2014 such (a,b),(c,d) pairs exist",
+      "lean_status": "NONE",
+      "lean_proof_sha": null,
+      "staged_advisory": true,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-A4",
+      "problem_number": "A4",
+      "domain": "number_theory",
+      "answer": "p \u2261 1 (mod 4), p > 5 (low-confidence)",
+      "lean_status": "NONE",
+      "lean_proof_sha": null,
+      "staged_advisory": true,
+      "judge_consensus": false,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-A5",
+      "problem_number": "A5",
+      "domain": "combinatorics",
+      "answer": "1/2",
+      "lean_status": "GREEN",
+      "lean_proof_sha": "a5_comb_putnam2024_c4d13795",
+      "staged_advisory": false,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-A6",
+      "problem_number": "A6",
+      "domain": "linear_algebra",
+      "answer": "det(M) > 0",
+      "lean_status": "NONE",
+      "lean_proof_sha": null,
+      "staged_advisory": true,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-B1",
+      "problem_number": "B1",
+      "domain": "combinatorics",
+      "answer": "Product of residue-class factorials",
+      "lean_status": "TRACKED",
+      "lean_proof_sha": "b1_comb_putnam2024_c4d13795",
+      "staged_advisory": true,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-B2",
+      "problem_number": "B2",
+      "domain": "geometry",
+      "answer": "Yes \u2014 infinite non-congruent sequence",
+      "lean_status": "NONE",
+      "lean_proof_sha": null,
+      "staged_advisory": true,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-B3",
+      "problem_number": "B3",
+      "domain": "analysis",
+      "answer": "Proof: delta_n ~ 1/(n\u03c0) \u2192 sharp bound",
+      "lean_status": "NONE",
+      "lean_proof_sha": null,
+      "staged_advisory": true,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-B4",
+      "problem_number": "B4",
+      "domain": "probability",
+      "answer": "2/3",
+      "lean_status": "GREEN",
+      "lean_proof_sha": "b4_prob_putnam2024_c4d13795",
+      "staged_advisory": false,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-B5",
+      "problem_number": "B5",
+      "domain": "combinatorics",
+      "answer": "Hockey Stick polynomial",
+      "lean_status": "NONE",
+      "lean_proof_sha": null,
+      "staged_advisory": true,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    },
+    {
+      "problem_id": "2024-B6",
+      "problem_number": "B6",
+      "domain": "analysis",
+      "answer": "c = -1/2",
+      "lean_status": "GREEN",
+      "lean_proof_sha": "b6_anal_putnam2024_c4d13795",
+      "staged_advisory": false,
+      "judge_consensus": true,
+      "ensemble_decision": "SOLVED"
+    }
+  ]
+}

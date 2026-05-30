@@ -21,7 +21,7 @@
 
 ## On Hugging Face
 
-[SZLHOLDINGS on Hugging Face](https://huggingface.co/SZLHOLDINGS) — 24 Spaces · 26 datasets · 2 models
+[SZLHOLDINGS on Hugging Face](https://huggingface.co/SZLHOLDINGS) — 24 Spaces · 29 datasets · 2 models
 
 | Surface | Artifact |
 |---------|----------|

@@ -1,0 +1,19 @@
+{
+  "name": "@szl/agi-forecast-runtime",
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "putnam:v1": "tsx scripts/run_putnam.ts",
+    "putnam:v2": "tsx scripts/run_putnam_v2.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}

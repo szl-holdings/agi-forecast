@@ -1,20 +1,25 @@
 {
   "name": "@szl/agi-forecast",
-  "version": "0.1.0",
-  "description": "SZL Holdings \u2014 Ouroboros runtime module",
+  "version": "0.3.0",
+  "description": "SZL Holdings — Ouroboros runtime module",
   "type": "module",
   "license": "Apache-2.0",
   "scripts": {
     "build": "tsc",
-    "test": "vitest run"
+    "test": "vitest run",
+    "putnam:v1": "tsx scripts/run_putnam.ts",
+    "putnam:v2": "tsx scripts/run_putnam_v2.ts"
   },
   "dependencies": {
-    "zod": "^4.4.3"
+    "zod": "^4.4.3",
+    "@anthropic-ai/sdk": "^0.52.0",
+    "openai": "^4.77.0"
   },
   "devDependencies": {
     "typescript": "^6.0.3",
     "vitest": "^4.1.7",
-    "@types/node": "^25.9.1"
+    "@types/node": "^25.9.1",
+    "tsx": "^4.19.0"
   },
   "main": "./dist/gauges.js",
   "types": "./dist/gauges.d.ts",
@@ -28,6 +33,7 @@
   "files": [
     "dist",
     "src",
+    "scripts",
     "package.json",
     "README.md"
   ]

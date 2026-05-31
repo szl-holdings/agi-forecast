@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Author: Lutar, Stephen P. | ORCID 0009-0001-0110-4173 | SZL Holdings
 // Module: agi-forecast — HTTP server
-// Doctrine V6 preflight: ✓
+// Doctrine V7 preflight: ✓
 
 import http from "node:http";
 import { BASE_GAUGES } from "./gauges.js";

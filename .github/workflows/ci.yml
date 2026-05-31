@@ -1,6 +1,6 @@
 name: CI
 
-# Series-A quality gate — Doctrine v6
+# Series-A quality gate — Doctrine v7
 # Typecheck and test the agi-forecast runtime package.
 
 on:

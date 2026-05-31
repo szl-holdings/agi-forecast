@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Author: Lutar, Stephen P. | ORCID 0009-0001-0110-4173 | SZL Holdings
 // Module: agi-forecast  Thesis: FG (Forecast Gauges)
-// Doctrine V6 preflight: ✓
+// Doctrine V7 preflight: ✓
 
 import { z } from "zod";
 

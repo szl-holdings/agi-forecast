@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Author: Lutar, Stephen P. | ORCID 0009-0001-0110-4173 | SZL Holdings
 // Module: agi-forecast — Putnam Corpus Loader v2
-// Doctrine V6 preflight: ✓
+// Doctrine V7 preflight: ✓
 // Source: Kedlaya, K.S. "Putnam Archive" https://kskedlaya.org/putnam-archive/
 // Competition: 85th William Lowell Putnam Mathematical Competition (2024 academic year)
 // NOTE: "Putnam 2025" refers to the competition run in December 2024 (85th edition).

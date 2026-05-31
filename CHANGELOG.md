@@ -10,7 +10,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- docs(readme): Series-A polish — concept DOI badge + Doctrine v6 clean
+- docs(readme): Series-A polish — concept DOI badge + Doctrine v7 clean
 - chore(security): enrich dependabot config — add npm ecosystem tracking
 - chore(actions): pin GitHub Actions to SHA refs (Scorecard PinnedDependenciesID)
 - chore: add canonical .zenodo.json (Series A audit metadata)
@@ -22,7 +22,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - data(putnam-2025): daily gauge updates (leaderboard, human summary, 1/12 gauge)
 - fix(D15): rename 'Current Value (May 2026)' → snapshot column + honesty banner
-- chore: add .github/dependabot.yml, CODEOWNERS, CI workflow per Doctrine V6
+- chore: add .github/dependabot.yml, CODEOWNERS, CI workflow per Doctrine V7
 
 ## [0.1.0] — 2026-05-17
 

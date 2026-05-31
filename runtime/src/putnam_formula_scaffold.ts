@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Author: Lutar, Stephen P. | ORCID 0009-0001-0110-4173 | SZL Holdings
 // Module: agi-forecast — Formula Scaffold (inlined from a11oy/packages/putnam-router)
-// Doctrine V6 preflight: ✓
+// Doctrine V7 preflight: ✓
 //
 // INLINING NOTE (phd/putnam-v2-self-contained):
 // PR #43 imported these utilities from '../../../../../../a11oy/packages/putnam-router/...'
@@ -15,7 +15,7 @@ import type { Domain } from './putnam_domain_classifier.js';
 // ---------------------------------------------------------------------------
 // Formula library
 // Entries based on standard Putnam/mathematical competition reference formulae.
-// References cited per Doctrine V6 (honest citations, no fake DOIs).
+// References cited per Doctrine V7 (honest citations, no fake DOIs).
 // ---------------------------------------------------------------------------
 
 export interface FormulaEntry {

@@ -66,7 +66,7 @@ Forecasting operates over `(Ω, ℱ, P)` where ω ∈ Ω is a time-indexed seque
 | Forecast scenario models | `ls src/scenarios/ \| wc -l` | run locally |
 | PAC-Bayes CI tests (main) | baseline | `pnpm test` |
 | Putnam (2026) | 4/12 Lean-discharged (GREEN) · 10/12 structure · 10/12 honest score | `putnam_scores/2026.json` |
-| Lean declarations (org) | 626 | [lutar-lean](https://github.com/szl-holdings/lutar-lean) |
+| Lean declarations (org) | 752 | [lutar-lean](https://github.com/szl-holdings/lutar-lean) |
 | Lean axioms (org) | 12 | [lutar-lean](https://github.com/szl-holdings/lutar-lean) |
 | HF Spaces (org) | 26 | [SZLHOLDINGS HF org](https://huggingface.co/SZLHOLDINGS) |
 

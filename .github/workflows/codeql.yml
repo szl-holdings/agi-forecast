@@ -1,6 +1,6 @@
 name: CodeQL
 
-# Series-A security gate — Doctrine v6
+# Series-A security gate — Doctrine v7
 # Scans JavaScript/TypeScript source and GitHub Actions workflows.
 
 on:

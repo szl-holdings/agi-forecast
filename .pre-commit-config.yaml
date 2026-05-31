@@ -1,4 +1,4 @@
-# Series-A pre-commit hooks — Doctrine v6
+# Series-A pre-commit hooks — Doctrine v7
 # Install: pip install pre-commit && pre-commit install
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks

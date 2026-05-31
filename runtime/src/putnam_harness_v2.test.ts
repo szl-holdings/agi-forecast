@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Author: Lutar, Stephen P. | ORCID 0009-0001-0110-4173 | SZL Holdings
 // Module: agi-forecast — Putnam Harness v2 tests
-// Doctrine V6 preflight: ✓
+// Doctrine V7 preflight: ✓
 // Runner: vitest (compatible with Cursor's existing test harness from PR #42)
 //
 // Target: 15-25 passing tests
@@ -249,7 +249,7 @@ describe('putnam_harness_v2', () => {
     const gauge = await runPutnamHarnessV2(corpus, { runAt: FIXED_RUN_AT });
     expect(gauge.schema_version).toBe('2.0.0');
     expect(gauge.total_problems).toBe(12);
-    expect(gauge.doctrine_v6_compliant).toBe(true);
+    expect(gauge.doctrine_v7_compliant).toBe(true);
   });
 
   it('gauge_v2.score01 = solved_count / total_problems (honest)', async () => {
@@ -346,7 +346,7 @@ describe('putnam_harness_v2', () => {
     expect(input.novelTasksTotal).toBe(gauge.total_problems);
   });
 
-  it('baseline_score01 is anchored at 0.0833 (Doctrine V6)', async () => {
+  it('baseline_score01 is anchored at 0.0833 (Doctrine V7)', async () => {
     const corpus = loadPutnamCorpus(2024);
     const gauge = await runPutnamHarnessV2(corpus, { runAt: FIXED_RUN_AT });
     expect(gauge.baseline_score01).toBeCloseTo(0.0833, 3);

@@ -55,7 +55,7 @@ export function dssePAE(payloadType: string, payload: string): string {
 }
 
 // ---------------------------------------------------------------------------
-// KEY DISCLOSURE (Doctrine V6 — Honest Infrastructure)
+// KEY DISCLOSURE (Doctrine V7 — Honest Infrastructure)
 // ---------------------------------------------------------------------------
 //
 // The default keyid ("szl:dev") and secret ("szl-dev-key") below are

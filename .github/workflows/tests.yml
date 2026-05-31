@@ -50,7 +50,7 @@ jobs:
       - name: Run tests (vitest)
         run: npm test -- --coverage --reporter=verbose
         env:
-          # No real API keys in CI — MOCK_JUDGE baseline only (Doctrine V6)
+          # No real API keys in CI — MOCK_JUDGE baseline only (Doctrine V7)
           # Provide ANTHROPIC_API_KEY or OPENAI_API_KEY as repo secrets for
           # optional live-judge runs on main.
           CI: "true"

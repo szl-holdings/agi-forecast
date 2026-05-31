@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: Apache-2.0
 // Author: Lutar, Stephen P. | ORCID 0009-0001-0110-4173 | SZL Holdings
 // Module: agi-forecast — Putnam Harness v2 (Lean Kernel Edition)
-// Doctrine V6 preflight: ✓
+// Doctrine V7 preflight: ✓
 // Branch: phd/putnam-all12-runtime-2026-05-30
 //
 // CHANGES FROM v2 BASELINE:
@@ -16,7 +16,7 @@
 // Lean ref:  SZL.AGI.PACBayes.capability_improvement_rate_bound
 // Lean file: Lutar/PACBayes/CapabilityImprovementRate.lean @ c4d13795
 //
-// Doctrine V6: score must be honest. GREEN=4, TRACKED+NONE=6, no-consensus=1.
+// Doctrine V7: score must be honest. GREEN=4, TRACKED+NONE=6, no-consensus=1.
 // Honest score = 10/12 = 0.833 (staged_advisory_count = 7, plus A4 no-consensus)
 //
 // Signed-off-by: szl-putnam-engineer
@@ -48,7 +48,7 @@ export interface LeanKernelRef {
  *
  * GREEN:   lake build passes, no sorry, no new axiom beyond standard Mathlib
  * TRACKED: lake build passes, ≥1 `sorry` present — kernel flags it; receipts
- *          inherit staged_advisory=true per Doctrine V6
+ *          inherit staged_advisory=true per Doctrine V7
  * NONE:    proof-type problem or no Lean formalization produced; judge-consensus only
  */
 export const LEAN_KERNEL_REFS: Record<string, LeanKernelRef> = {
@@ -208,7 +208,7 @@ export interface GaugeV2 {
   per_problem: PerProblemResult[];
   receipt_chain: PutnamReceipt[];
   fg04_advisory: FG04Advisory;
-  doctrine_v6_compliant: true;
+  doctrine_v7_compliant: true;
   notes: string;
 }
 
@@ -251,7 +251,7 @@ export type JudgeFn = (
 ) => Promise<JudgeResult>;
 
 // ---------------------------------------------------------------------------
-// Ground-truth answers for MOCK_JUDGE (Doctrine V6 — real answers, not hallucinated)
+// Ground-truth answers for MOCK_JUDGE (Doctrine V7 — real answers, not hallucinated)
 // Sourced from Kedlaya archive + AoPS editorial 2024-12 + lutar-lean kernel-green
 // ---------------------------------------------------------------------------
 
@@ -276,7 +276,7 @@ const GROUND_TRUTH: Record<
 /**
  * MOCK_JUDGE — uses ground-truth corpus, not hallucinated verdicts.
  * In CI: all 12 problems resolved correctly (10 fully clean, 2 staged-advisory A4-low-confidence).
- * Doctrine V6: report honestly — A4 judge_consensus=false → PARTIAL not SOLVED.
+ * Doctrine V7: report honestly — A4 judge_consensus=false → PARTIAL not SOLVED.
  */
 export const MOCK_JUDGE: JudgeFn = async (
   problem: PutnamProblem,
@@ -518,7 +518,7 @@ export async function runPutnamHarness(
       timestamp: runAt,
       wiring: 'FG-S1→FG-S4 pipeline; inject gauge_v2.score01 as FG-04 input',
     },
-    doctrine_v6_compliant: true,
+    doctrine_v7_compliant: true,
     notes: [
       `Honest score: ${solvedCount}/${problems.length} = ${(score01 * 100).toFixed(1)}%.`,
       `GREEN (zero sorry): ${greenLeanCount} problems.`,

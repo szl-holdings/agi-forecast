@@ -30,7 +30,7 @@
 > **NOTE:** SLSA Level 1 (source + build provenance documented). L2/L3 require Sigstore + isolated builders (roadmap).
 
 > Statistical forecasting models and scenario library for AI governance trajectories, grounded in the Lutar Invariant Λ-axis scoring framework.  
-> Doctrine v6 · DOI [10.5281/zenodo.20434276](https://doi.org/10.5281/zenodo.20434276)
+> Doctrine v7 · DOI [10.5281/zenodo.20434276](https://doi.org/10.5281/zenodo.20434276)
 
 **agi-forecast** provides PAC-Bayes-bounded Λ-trajectory forecasting over a probability space where each scenario is a time-indexed sequence of Λ-scores. Each scenario is receipt-attested, ensuring fine-tuning perturbations stay within the DPO stability region (TH12).
 

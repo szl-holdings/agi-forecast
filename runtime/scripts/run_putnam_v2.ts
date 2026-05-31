@@ -12,7 +12,7 @@
  *   OPENAI_API_KEY      — fallback; enables GPT judge
  *   (neither set)       — runs with MOCK_JUDGE, output tagged STAGED
  *
- * Exit code: always 0 per Doctrine v6 (no failure on low score).
+ * Exit code: always 0 per Doctrine v7 (no failure on low score).
  *
  * Signed-off-by: szl-putnam-engineer
  */
@@ -136,11 +136,11 @@ async function main(): Promise<void> {
     );
   }
 
-  // Doctrine v6: exit 0 always
+  // Doctrine v7: exit 0 always
   process.exit(0);
 }
 
 main().catch((err) => {
   process.stderr.write(`[putnam:v2] Fatal: ${err instanceof Error ? err.message : String(err)}\n`);
-  process.exit(0); // still 0 per Doctrine v6
+  process.exit(0); // still 0 per Doctrine v7
 });

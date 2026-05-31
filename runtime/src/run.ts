@@ -2,14 +2,14 @@
 // SPDX-License-Identifier: Apache-2.0
 // Author: Lutar, Stephen P. | ORCID 0009-0001-0110-4173 | SZL Holdings
 // Module: agi-forecast — Scenario runner
-// Doctrine V6 preflight: ✓
+// Doctrine V7 preflight: ✓
 //
 // Usage:
 //   pnpm tsx src/run.ts --scenario baseline-v6
 //   pnpm tsx src/run.ts --scenario baseline-v6 --out putnam-2025/gauge_v2.json
 //   pnpm tsx src/run.ts --scenario baseline-v6 --year 2024 --verbose
 //
-// Exit code: always 0 (Doctrine V6: never fail on low score, disclose honestly)
+// Exit code: always 0 (Doctrine V7: never fail on low score, disclose honestly)
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
@@ -51,7 +51,7 @@ interface Scenario {
   scenario_id: string;
   description: string;
   version: string;
-  doctrine_v6_compliant: boolean;
+  doctrine_v7_compliant: boolean;
   corpus_year: number;
   source: string;
   problems: ScenarioProblem[];
@@ -75,8 +75,8 @@ function loadScenario(name: string): Scenario {
 
   const scenario = JSON.parse(raw) as Scenario;
 
-  if (!scenario.doctrine_v6_compliant) {
-    console.warn(`[WARN] scenario "${name}" is not marked doctrine_v6_compliant`);
+  if (!scenario.doctrine_v7_compliant) {
+    console.warn(`[WARN] scenario "${name}" is not marked doctrine_v7_compliant`);
   }
 
   return scenario;
@@ -98,7 +98,7 @@ interface ProblemResult {
 }
 
 async function runMockHarness(problems: ScenarioProblem[]): Promise<ProblemResult[]> {
-  // Doctrine V6 mock baseline: only 2024-A1 is solvable (1/12 = 8.3%)
+  // Doctrine V7 mock baseline: only 2024-A1 is solvable (1/12 = 8.3%)
   const knownSolvable = new Set(["2024-A1"]);
 
   return problems.map((p) => ({
@@ -127,7 +127,7 @@ interface GaugeOutput {
   delta_score01: number;
   staged: boolean;
   per_problem: ProblemResult[];
-  doctrine_v6_compliant: true;
+  doctrine_v7_compliant: true;
   notes: string;
 }
 
@@ -167,7 +167,7 @@ async function main(): Promise<void> {
   if (!hasRealJudge) {
     console.log("[run.ts] No ANTHROPIC_API_KEY or OPENAI_API_KEY found.");
     console.log("[run.ts] Running with MOCK_JUDGE — output tagged staged:true.");
-    console.log("[run.ts] Doctrine V6: this is the honest baseline (1/12 = 8.3%).");
+    console.log("[run.ts] Doctrine V7: this is the honest baseline (1/12 = 8.3%).");
   }
 
   console.log("[run.ts] Running harness...");
@@ -195,11 +195,11 @@ async function main(): Promise<void> {
     delta_score01: delta,
     staged: !hasRealJudge,
     per_problem: perProblem,
-    doctrine_v6_compliant: true,
+    doctrine_v7_compliant: true,
     notes:
       !hasRealJudge
         ? "STAGED: MOCK_JUDGE only. Set ANTHROPIC_API_KEY or OPENAI_API_KEY for real runs."
-        : "Real LLM judge enabled. Score is publishable per Doctrine V6.",
+        : "Real LLM judge enabled. Score is publishable per Doctrine V7.",
   };
 
   // Console output
@@ -231,12 +231,12 @@ async function main(): Promise<void> {
     }
   }
 
-  // Always exit 0 per Doctrine V6
+  // Always exit 0 per Doctrine V7
   process.exit(0);
 }
 
 main().catch((err) => {
   console.error("[run.ts] Fatal error:", err);
-  // Still exit 0 per Doctrine V6 — never fail on low/no score
+  // Still exit 0 per Doctrine V7 — never fail on low/no score
   process.exit(0);
 });

@@ -27,8 +27,8 @@
     "@szl-holdings/perception-loop@0.1.0",
     "@szl-holdings/putnam-harness@0.2.0"
   ],
-  "doctrine_v6_compliant": true,
-  "notes": "Honest score: 10/12 = 83.3% (Doctrine V6). GREEN (zero sorry, lake-verified): A1, A5, B4, B6 = 4 problems. NONE (proof-type, judge-consensus, no Lean): A3, A6, B2, B3, B5 + A4(partial) = 6 problems. TRACKED (sorry present, staged_advisory=true): A2, B1 = 2 problems. staged_advisory_count=8 (TRACKED\u00d72 + NONE\u00d76). Do not claim 12/12: 2 TRACKED proofs have unresolved sorry tactics. Lean commit: c4d13795689601324fce0236351bfe0ade990a43. Receipt chain head: 90420681f588d0082cce206c108da4b1c1e10752273ff0f7320f50bb6f8b238d.",
+  "doctrine_v7_compliant": true,
+  "notes": "Honest score: 10/12 = 83.3% (Doctrine V7). GREEN (zero sorry, lake-verified): A1, A5, B4, B6 = 4 problems. NONE (proof-type, judge-consensus, no Lean): A3, A6, B2, B3, B5 + A4(partial) = 6 problems. TRACKED (sorry present, staged_advisory=true): A2, B1 = 2 problems. staged_advisory_count=8 (TRACKED\u00d72 + NONE\u00d76). Do not claim 12/12: 2 TRACKED proofs have unresolved sorry tactics. Lean commit: c4d13795689601324fce0236351bfe0ade990a43. Receipt chain head: 90420681f588d0082cce206c108da4b1c1e10752273ff0f7320f50bb6f8b238d.",
   "ensemble_solved": 12,
   "clean_solved_green_only": 4,
   "clean_solved_no_sorry_or_lean": 10,

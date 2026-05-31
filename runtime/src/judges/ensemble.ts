@@ -18,7 +18,7 @@
  * Lean file: Lutar/PACBayes/CapabilityImprovementRate.lean @ c4d13795
  * Protocol:  RAE_1_PROTOCOL.md §3
  *
- * Doctrine V6 — score honest; staged_advisory when sorry present or no consensus.
+ * Doctrine V7 — score honest; staged_advisory when sorry present or no consensus.
  * Signed-off-by: SZL Engineering <eng@szl-holdings.com>
  */
 
@@ -278,7 +278,7 @@ export function majorityVote(records: RAE1JudgeRecord[]): {
 // ─── Mock Judge (ground-truth aware) ─────────────────────────────────────────
 
 /**
- * mockJudge — deterministic ground-truth judge for CI and Doctrine V6 compliance.
+ * mockJudge — deterministic ground-truth judge for CI and Doctrine V7 compliance.
  *
  * Previous behavior: always returned WRONG for capability conservatism.
  * Updated behavior:
